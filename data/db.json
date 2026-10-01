@@ -1,0 +1,1611 @@
+{
+  "settings": {
+    "hostelName": "Greenfield Executive Residency & Hostel",
+    "address": "Plot 42, Metro Residency Lane, Knowledge City, Bangalore, Karnataka - 560066",
+    "phone": "+91 98765 43210",
+    "email": "management@greenfieldhostel.com",
+    "wifiPassword": "Greenfield#WiFi2026",
+    "singleRent": 9000,
+    "doubleRent": 6500,
+    "rentEffectiveDate": "2026-01-01",
+    "paymentDueDay": 5,
+    "defaultSecurityDepositSingle": 4500,
+    "defaultSecurityDepositDouble": 3500,
+    "foodIncluded": true,
+    "facilities": [
+      "Free High-Speed Wi-Fi on every floor",
+      "Weekly toilet & bathroom deep cleaning by management",
+      "Hygiene and garbage sanitization protocol",
+      "Free RO cold & normal drinking water",
+      "24-Hour Electricity with instant inverter/generator backup",
+      "4 Times Hygienic Meal Service included in accommodation rent",
+      "Attached individual or shared bathrooms with modern fittings",
+      "Individual study table, chair, and dedicated wardrobe/locker",
+      "Biometric entry and 24/7 CCTV surveillance in common areas"
+    ],
+    "rentHistory": [
+      {
+        "id": "rh-1",
+        "effectiveDate": "2026-01-01",
+        "singleRent": 9000,
+        "doubleRent": 6500,
+        "notes": "Initial standard rates with all meals and high-speed Wi-Fi included",
+        "createdAt": "2026-01-01T00:00:00.000Z"
+      }
+    ]
+  },
+  "users": [
+    {
+      "id": "usr-admin",
+      "username": "admin",
+      "passwordHash": "admin123",
+      "role": "admin",
+      "name": "Rajesh Sharma",
+      "email": "management@greenfieldhostel.com",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "usr-aarav",
+      "username": "aarav",
+      "passwordHash": "resident123",
+      "role": "resident",
+      "name": "Aarav Patel",
+      "email": "aarav.patel@example.com",
+      "residentId": "RES-101",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "termsAcceptedVersion": "v2.0-2026",
+      "termsAcceptedAt": "2026-10-01T16:35:59.698Z"
+    },
+    {
+      "id": "usr-rohan",
+      "username": "rohan",
+      "passwordHash": "resident123",
+      "role": "resident",
+      "name": "Rohan Verma",
+      "email": "rohan.verma@example.com",
+      "residentId": "RES-103A",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "usr-vikram",
+      "username": "vikram",
+      "passwordHash": "resident123",
+      "role": "resident",
+      "name": "Vikram Sen",
+      "email": "vikram.sen@example.com",
+      "residentId": "RES-103B",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "usr-neha",
+      "username": "neha",
+      "passwordHash": "resident123",
+      "role": "resident",
+      "name": "Neha Kulkarni",
+      "email": "neha.kulkarni@example.com",
+      "residentId": "RES-201",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-101",
+      "roomNumber": "101",
+      "floor": 1,
+      "type": "single",
+      "capacity": 1,
+      "status": "Fully Occupied",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-101-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": true,
+          "residentId": "RES-101",
+          "residentName": "Aarav Patel"
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 1 Room 101 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-102",
+      "roomNumber": "102",
+      "floor": 1,
+      "type": "single",
+      "capacity": 1,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-102-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 1 Room 102 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-103",
+      "roomNumber": "103",
+      "floor": 1,
+      "type": "double",
+      "capacity": 2,
+      "status": "Fully Occupied",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-103-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": true,
+          "residentId": "RES-103A",
+          "residentName": "Rohan Verma"
+        },
+        {
+          "id": "bed-103-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": true,
+          "residentId": "RES-103B",
+          "residentName": "Vikram Sen"
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 1 Room 103 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-104",
+      "roomNumber": "104",
+      "floor": 1,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-104-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-104-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 1 Room 104 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-105",
+      "roomNumber": "105",
+      "floor": 1,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-105-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-105-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 1 Room 105 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-106",
+      "roomNumber": "106",
+      "floor": 1,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-106-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-106-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 1 Room 106 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-107",
+      "roomNumber": "107",
+      "floor": 1,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-107-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-107-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 1 Room 107 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-201",
+      "roomNumber": "201",
+      "floor": 2,
+      "type": "single",
+      "capacity": 1,
+      "status": "Fully Occupied",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-201-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": true,
+          "residentId": "RES-201",
+          "residentName": "Neha Kulkarni"
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 2 Room 201 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-202",
+      "roomNumber": "202",
+      "floor": 2,
+      "type": "single",
+      "capacity": 1,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-202-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 2 Room 202 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-203",
+      "roomNumber": "203",
+      "floor": 2,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-203-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-203-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 2 Room 203 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-204",
+      "roomNumber": "204",
+      "floor": 2,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-204-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-204-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 2 Room 204 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-205",
+      "roomNumber": "205",
+      "floor": 2,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-205-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-205-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 2 Room 205 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-206",
+      "roomNumber": "206",
+      "floor": 2,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-206-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-206-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 2 Room 206 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-207",
+      "roomNumber": "207",
+      "floor": 2,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-207-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-207-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 2 Room 207 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-301",
+      "roomNumber": "301",
+      "floor": 3,
+      "type": "single",
+      "capacity": 1,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-301-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 3 Room 301 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-302",
+      "roomNumber": "302",
+      "floor": 3,
+      "type": "single",
+      "capacity": 1,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Fan",
+        "1 Light",
+        "1 English Toilet",
+        "Attached Bathroom",
+        "Appropriate Switches/Switchboard",
+        "Wardrobe & Study Desk"
+      ],
+      "beds": [
+        {
+          "id": "bed-302-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 9000,
+      "totalRoomRent": 9000,
+      "notes": "Floor 3 Room 302 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-303",
+      "roomNumber": "303",
+      "floor": 3,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-303-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-303-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 3 Room 303 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-304",
+      "roomNumber": "304",
+      "floor": 3,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-304-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-304-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 3 Room 304 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-305",
+      "roomNumber": "305",
+      "floor": 3,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-305-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-305-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 3 Room 305 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-306",
+      "roomNumber": "306",
+      "floor": 3,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-306-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-306-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 3 Room 306 - Common living lounge & Wi-Fi available"
+    },
+    {
+      "id": "room-307",
+      "roomNumber": "307",
+      "floor": 3,
+      "type": "double",
+      "capacity": 2,
+      "status": "Available",
+      "facilities": [
+        "1 Bed",
+        "1 Double Sleeping Bed / Arrangement",
+        "1 Fan",
+        "1 Light",
+        "2 Switchboards",
+        "1 Indian Toilet",
+        "Attached Bathroom",
+        "Dual Lockers"
+      ],
+      "beds": [
+        {
+          "id": "bed-307-1",
+          "bedNumber": "Bed 1",
+          "isOccupied": false
+        },
+        {
+          "id": "bed-307-2",
+          "bedNumber": "Bed 2",
+          "isOccupied": false
+        }
+      ],
+      "rentPerPerson": 6500,
+      "totalRoomRent": 13000,
+      "notes": "Floor 3 Room 307 - Common living lounge & Wi-Fi available"
+    }
+  ],
+  "residents": [
+    {
+      "id": "RES-101",
+      "fullName": "Aarav Patel",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "dob": "2001-05-14",
+      "gender": "Male",
+      "mobile": "+91 98450 11223",
+      "email": "aarav.patel@example.com",
+      "address": "24 Green Meadows, Ring Road",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pinCode": "411001",
+      "emergencyContactName": "Dinesh Patel",
+      "emergencyContactNumber": "+91 98450 99887",
+      "emergencyRelationship": "Father",
+      "idType": "Aadhaar Card",
+      "idNumber": "9845-1234-5678",
+      "roomNumber": "101",
+      "floor": 1,
+      "bedNumber": "Bed 1",
+      "roomType": "single",
+      "joiningDate": "2026-02-01",
+      "expectedLeavingDate": "2027-01-31",
+      "monthlyRent": 9000,
+      "securityDeposit": 4500,
+      "depositStatus": "Paid",
+      "status": "Active",
+      "workOrCollege": "Cognizant Tech Solutions",
+      "designation": "Associate Software Engineer",
+      "notes": "Prefers quiet study environment. Prompt payer.",
+      "createdAt": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "RES-103A",
+      "fullName": "Rohan Verma",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80",
+      "dob": "2002-08-20",
+      "gender": "Male",
+      "mobile": "+91 97110 44556",
+      "email": "rohan.verma@example.com",
+      "address": "Flat 302, Lotus Heights, Gomti Nagar",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "pinCode": "226010",
+      "emergencyContactName": "Sunita Verma",
+      "emergencyContactNumber": "+91 97110 88776",
+      "emergencyRelationship": "Mother",
+      "idType": "Aadhaar Card",
+      "idNumber": "4455-8899-1122",
+      "roomNumber": "103",
+      "floor": 1,
+      "bedNumber": "Bed 1",
+      "roomType": "double",
+      "joiningDate": "2026-01-15",
+      "expectedLeavingDate": "2026-12-31",
+      "monthlyRent": 6500,
+      "securityDeposit": 3500,
+      "depositStatus": "Paid",
+      "status": "Active",
+      "workOrCollege": "National Institute of Design",
+      "designation": "Postgraduate Student",
+      "notes": "Art & design student. Vegetarian meals preferred.",
+      "createdAt": "2026-01-15T10:30:00.000Z"
+    },
+    {
+      "id": "RES-103B",
+      "fullName": "Vikram Sen",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "dob": "2000-11-03",
+      "gender": "Male",
+      "mobile": "+91 99201 33221",
+      "email": "vikram.sen@example.com",
+      "address": "B-12 Lake View Enclave, Salt Lake",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "pinCode": "700091",
+      "emergencyContactName": "Bimal Sen",
+      "emergencyContactNumber": "+91 99201 99001",
+      "emergencyRelationship": "Uncle",
+      "idType": "Passport",
+      "idNumber": "Z8941022",
+      "roomNumber": "103",
+      "floor": 1,
+      "bedNumber": "Bed 2",
+      "roomType": "double",
+      "joiningDate": "2026-02-10",
+      "expectedLeavingDate": "2026-11-30",
+      "monthlyRent": 6500,
+      "securityDeposit": 3500,
+      "depositStatus": "Paid",
+      "status": "Active",
+      "workOrCollege": "Infosys BPM",
+      "designation": "Financial Analyst",
+      "notes": "Shares room 103 with Rohan amicably.",
+      "createdAt": "2026-02-10T14:00:00.000Z"
+    },
+    {
+      "id": "RES-201",
+      "fullName": "Neha Kulkarni",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "dob": "2001-03-12",
+      "gender": "Female",
+      "mobile": "+91 98820 66778",
+      "email": "neha.kulkarni@example.com",
+      "address": "15 Shivneri Colony",
+      "city": "Nashik",
+      "state": "Maharashtra",
+      "pinCode": "422005",
+      "emergencyContactName": "Anil Kulkarni",
+      "emergencyContactNumber": "+91 98820 11229",
+      "emergencyRelationship": "Father",
+      "idType": "PAN Card",
+      "idNumber": "BKUPK8872L",
+      "roomNumber": "201",
+      "floor": 2,
+      "bedNumber": "Bed 1",
+      "roomType": "single",
+      "joiningDate": "2026-03-01",
+      "expectedLeavingDate": "2027-02-28",
+      "monthlyRent": 9000,
+      "securityDeposit": 4500,
+      "depositStatus": "Paid",
+      "status": "Active",
+      "workOrCollege": "HCL Technologies",
+      "designation": "UI/UX Designer",
+      "notes": "Floor 2 single occupant.",
+      "createdAt": "2026-03-01T11:00:00.000Z"
+    }
+  ],
+  "bills": [
+    {
+      "id": "INV-2026-09-101",
+      "residentId": "RES-101",
+      "residentName": "Aarav Patel",
+      "roomNumber": "101",
+      "floor": 1,
+      "roomType": "single",
+      "billingMonth": "September 2026",
+      "rentAmount": 9000,
+      "otherCharges": 0,
+      "discount": 0,
+      "previousBalance": 0,
+      "totalAmount": 9000,
+      "amountPaid": 9000,
+      "remainingBalance": 0,
+      "dueDate": "2026-09-05",
+      "status": "Paid",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "INV-2026-09-103A",
+      "residentId": "RES-103A",
+      "residentName": "Rohan Verma",
+      "roomNumber": "103",
+      "floor": 1,
+      "roomType": "double",
+      "billingMonth": "September 2026",
+      "rentAmount": 6500,
+      "otherCharges": 0,
+      "discount": 0,
+      "previousBalance": 0,
+      "totalAmount": 6500,
+      "amountPaid": 4000,
+      "remainingBalance": 2500,
+      "dueDate": "2026-09-05",
+      "status": "Partially Paid",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "INV-2026-09-103B",
+      "residentId": "RES-103B",
+      "residentName": "Vikram Sen",
+      "roomNumber": "103",
+      "floor": 1,
+      "roomType": "double",
+      "billingMonth": "September 2026",
+      "rentAmount": 6500,
+      "otherCharges": 0,
+      "discount": 0,
+      "previousBalance": 0,
+      "totalAmount": 6500,
+      "amountPaid": 0,
+      "remainingBalance": 6500,
+      "dueDate": "2026-09-05",
+      "status": "Overdue",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "INV-2026-09-201",
+      "residentId": "RES-201",
+      "residentName": "Neha Kulkarni",
+      "roomNumber": "201",
+      "floor": 2,
+      "roomType": "single",
+      "billingMonth": "September 2026",
+      "rentAmount": 9000,
+      "otherCharges": 0,
+      "discount": 0,
+      "previousBalance": 0,
+      "totalAmount": 9000,
+      "amountPaid": 9000,
+      "remainingBalance": 0,
+      "dueDate": "2026-09-05",
+      "status": "Paid",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-901",
+      "billId": "INV-2026-09-101",
+      "residentId": "RES-101",
+      "residentName": "Aarav Patel",
+      "roomNumber": "101",
+      "floor": 1,
+      "amount": 9000,
+      "paymentDate": "2026-09-03",
+      "paymentMethod": "UPI",
+      "transactionReference": "UPI/624911849201@okhdfcbank",
+      "receivedBy": "Rajesh Sharma (Owner)",
+      "notes": "Full payment received via UPI QR"
+    },
+    {
+      "id": "PAY-902",
+      "billId": "INV-2026-09-103A",
+      "residentId": "RES-103A",
+      "residentName": "Rohan Verma",
+      "roomNumber": "103",
+      "floor": 1,
+      "amount": 4000,
+      "paymentDate": "2026-09-04",
+      "paymentMethod": "Cash",
+      "transactionReference": "CASH-REC-103",
+      "receivedBy": "Rajesh Sharma (Owner)",
+      "notes": "Partial cash payment, balance ₹2,500 due on 15th"
+    },
+    {
+      "id": "PAY-903",
+      "billId": "INV-2026-09-201",
+      "residentId": "RES-201",
+      "residentName": "Neha Kulkarni",
+      "roomNumber": "201",
+      "floor": 2,
+      "amount": 9000,
+      "paymentDate": "2026-09-02",
+      "paymentMethod": "Bank Transfer",
+      "transactionReference": "IMPS/624501239845",
+      "receivedBy": "Rajesh Sharma (Owner)",
+      "notes": "NetBanking IMPS transfer verified"
+    }
+  ],
+  "deposits": [
+    {
+      "id": "DEP-101",
+      "residentId": "RES-101",
+      "residentName": "Aarav Patel",
+      "roomNumber": "101",
+      "amount": 4500,
+      "depositDate": "2026-02-01",
+      "status": "Held",
+      "notes": "Full deposit paid at check-in (Single Room standard deposit)",
+      "bedNumber": "Bed 1",
+      "roomType": "single",
+      "datePaid": "2026-02-01",
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "refundableAmount": 4500,
+      "refundAmount": 0,
+      "deductionAmount": 0,
+      "deductionReason": "",
+      "refundDate": "",
+      "finalSettlementStatus": "Held in Custody"
+    },
+    {
+      "id": "DEP-103A",
+      "residentId": "RES-103A",
+      "residentName": "Rohan Verma",
+      "roomNumber": "103",
+      "amount": 3500,
+      "depositDate": "2026-01-15",
+      "status": "Held",
+      "notes": "Full deposit paid at check-in (Double Room standard deposit)",
+      "bedNumber": "Bed 1",
+      "roomType": "double",
+      "datePaid": "2026-01-15",
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "refundableAmount": 3500,
+      "refundAmount": 0,
+      "deductionAmount": 0,
+      "deductionReason": "",
+      "refundDate": "",
+      "finalSettlementStatus": "Held in Custody"
+    },
+    {
+      "id": "DEP-103B",
+      "residentId": "RES-103B",
+      "residentName": "Vikram Sen",
+      "roomNumber": "103",
+      "amount": 3500,
+      "depositDate": "2026-02-10",
+      "status": "Held",
+      "notes": "Full deposit paid at check-in (Double Room standard deposit)",
+      "bedNumber": "Bed 2",
+      "roomType": "double",
+      "datePaid": "2026-02-10",
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "refundableAmount": 3500,
+      "refundAmount": 0,
+      "deductionAmount": 0,
+      "deductionReason": "",
+      "refundDate": "",
+      "finalSettlementStatus": "Held in Custody"
+    },
+    {
+      "id": "DEP-201",
+      "residentId": "RES-201",
+      "residentName": "Neha Kulkarni",
+      "roomNumber": "201",
+      "amount": 4500,
+      "depositDate": "2026-03-01",
+      "status": "Held",
+      "notes": "Full deposit paid at check-in (Single Room standard deposit)",
+      "bedNumber": "Bed 1",
+      "roomType": "single",
+      "datePaid": "2026-03-01",
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "refundableAmount": 4500,
+      "refundAmount": 0,
+      "deductionAmount": 0,
+      "deductionReason": "",
+      "refundDate": "",
+      "finalSettlementStatus": "Held in Custody"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "CMP-101",
+      "residentId": "RES-103A",
+      "residentName": "Rohan Verma",
+      "roomNumber": "103",
+      "floor": 1,
+      "title": "Bathroom washbasin tap leaking water",
+      "category": "Water",
+      "description": "The washbasin tap in attached bathroom has a slow persistent drip causing water wastage.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "adminResponse": "Plumber Suresh has been notified and scheduled for visit today at 4:30 PM.",
+      "internalNotes": "Replace washer or tap valve",
+      "assignedTo": "Suresh (Hostel Plumber)",
+      "createdAt": "2026-09-08T10:15:00.000Z",
+      "history": [
+        {
+          "timestamp": "2026-09-08T10:15:00.000Z",
+          "status": "Submitted",
+          "note": "Complaint registered by resident Rohan Verma",
+          "by": "Rohan Verma"
+        },
+        {
+          "timestamp": "2026-09-08T11:00:00.000Z",
+          "status": "In Progress",
+          "note": "Assigned to plumber Suresh",
+          "by": "Rajesh Sharma"
+        },
+        {
+          "timestamp": "2026-09-10T10:34:33.136Z",
+          "status": "Resolved",
+          "note": "Plumber Suresh has been notified and scheduled for visit today at 4:30 PM.",
+          "by": "Rajesh Sharma"
+        }
+      ],
+      "resolvedAt": "2026-09-10T10:34:33.136Z"
+    },
+    {
+      "id": "CMP-102",
+      "residentId": "RES-201",
+      "residentName": "Neha Kulkarni",
+      "roomNumber": "201",
+      "floor": 2,
+      "title": "Ceiling fan regulator noisy at speed 2",
+      "category": "Fan",
+      "description": "The ceiling fan regulator gives buzzing sound when switched to speed 2.",
+      "priority": "Low",
+      "status": "Resolved",
+      "adminResponse": "Regulator unit replaced with brand new Anchor modular switch.",
+      "internalNotes": "Replaced regulator component cost ₹180",
+      "assignedTo": "Mahesh (Electrician)",
+      "createdAt": "2026-09-04T15:20:00.000Z",
+      "resolvedAt": "2026-09-05T12:00:00.000Z",
+      "history": [
+        {
+          "timestamp": "2026-09-04T15:20:00.000Z",
+          "status": "Submitted",
+          "note": "Complaint registered by resident",
+          "by": "Neha Kulkarni"
+        },
+        {
+          "timestamp": "2026-09-05T12:00:00.000Z",
+          "status": "Resolved",
+          "note": "Replaced regulator and tested ok",
+          "by": "Rajesh Sharma"
+        }
+      ]
+    }
+  ],
+  "meals": [
+    {
+      "id": "meal-mon",
+      "date": "2026-09-07",
+      "dayOfWeek": "Monday",
+      "breakfast": "Poha with Roasted Peanuts, Boiled Sprouts, Masala Chai / Coffee",
+      "lunch": "Rajma Masala, Steamed Basmati Rice, Chapati, Mixed Salad, Curd",
+      "eveningSnacks": "Vegetable Samosa with Mint Chutney, Hot Tea",
+      "dinner": "Aloo Gobi Matar, Dal Tadka, Phulka Roti, Jeera Rice, Gulab Jamun (1 pc)",
+      "specialNote": "Dessert served with dinner tonight"
+    },
+    {
+      "id": "meal-tue",
+      "date": "2026-09-08",
+      "dayOfWeek": "Tuesday",
+      "breakfast": "South Indian Idli & Medu Vada, Coconut Chutney, Sambar, Filter Coffee",
+      "lunch": "Palak Paneer, Yellow Moong Dal, Steamed Rice, Tawa Roti, Papad",
+      "eveningSnacks": "Banana Bread & Salted Biscuits, Ginger Tea",
+      "dinner": "Seasonal Mix Veg Korma, Dal Fry, Roti, Peas Pulao, Boondi Raita"
+    },
+    {
+      "id": "meal-wed",
+      "date": "2026-09-09",
+      "dayOfWeek": "Wednesday",
+      "breakfast": "Stuffed Aloo Paratha with Butter, Curd & Pickle, Tea",
+      "lunch": "Chole Masala, Bhature / Rice, Jeera Aloo, Cucumber Salad",
+      "eveningSnacks": "Crispy Veg Pakoras, Green Chutney, Cutting Chai",
+      "dinner": "Paneer Butter Masala, Kali Dal Makhani, Butter Naan / Roti, Rice, Kheer",
+      "specialNote": "Special Punjabi evening spread"
+    },
+    {
+      "id": "meal-thu",
+      "date": "2026-09-10",
+      "dayOfWeek": "Thursday",
+      "breakfast": "Upma with Cashews, Tomato Chutney, Fresh Fruits, Tea/Coffee",
+      "lunch": "Bhindi Do Pyaza, Toor Dal Tadka, Rice, Phulka, Butter Milk (Chaas)",
+      "eveningSnacks": "Bhel Puri with Sev & Chutneys, Tea",
+      "dinner": "Malai Kofta, Kashmiri Pulao, Chapati, Dal Palak, Fruit Custard",
+      "specialNote": "Fresh chilled Butter Milk available during lunch"
+    },
+    {
+      "id": "meal-fri",
+      "date": "2026-09-11",
+      "dayOfWeek": "Friday",
+      "breakfast": "Crispy Masala Dosa, Sambar, Chutney, Tea / Milk",
+      "lunch": "Egg Curry / Paneer Bhurji, Dal Lasooni, Steamed Rice, Roti, Salad",
+      "eveningSnacks": "Bread Pakora, Sweet & Spicy Dip, Tea",
+      "dinner": "Vegetable Dum Biryani, Mirchi Ka Salan, Onion Raita, Moong Dal Halwa",
+      "specialNote": "Egg option available for non-vegetarian residents"
+    },
+    {
+      "id": "meal-sat",
+      "date": "2026-09-12",
+      "dayOfWeek": "Saturday",
+      "breakfast": "Bread Omelette / Veg Cheese Toast, Cornflakes with Milk, Coffee",
+      "lunch": "Kadhi Pakora, Steamed Rice, Aloo Jeera, Roti, Fried Papad",
+      "eveningSnacks": "Pav Bhaji with Buttered Pav, Chai",
+      "dinner": "Matar Paneer, Dal Makhani, Tawa Paratha, Veg Pulao, Ice Cream"
+    },
+    {
+      "id": "meal-sun",
+      "date": "2026-09-13",
+      "dayOfWeek": "Sunday",
+      "breakfast": "Puri Bhaji with Halwa, Masala Tea / Coffee",
+      "lunch": "Special Sunday Feast: Paneer Tikka Masala, Dal Maharani, Veg Pulao, Butter Roti, Gulab Jamun",
+      "eveningSnacks": "Dry Cake & Cookies, Coffee",
+      "dinner": "Light Khichdi, Kadhi, Roasted Papad, Pickle, Aloo Chokha (Digestive Sunday Supper)",
+      "specialNote": "Sunday Brunch timing extended until 10:30 AM"
+    }
+  ],
+  "notices": [
+    {
+      "id": "NOT-4313",
+      "title": "HOSTEL GATE RULE ",
+      "date": "2026-09-10",
+      "priority": "Normal",
+      "targetAudience": "All Residents",
+      "createdBy": "Rajesh Sharma"
+    },
+    {
+      "id": "NOT-4249",
+      "title": "HOSTEL GATE RULE ",
+      "date": "2026-09-10",
+      "priority": "Normal",
+      "targetAudience": "All Residents",
+      "createdBy": "Rajesh Sharma"
+    },
+    {
+      "id": "NOT-01",
+      "title": "Weekly Deep Toilet & Bathroom Cleaning - Saturday",
+      "message": "All attached and common toilets on Floor 1, Floor 2, and Floor 3 will undergo deep sanitization and hygiene cleaning between 9:30 AM and 1:30 PM this Saturday. Please ensure bathroom floors are clear of laundry.",
+      "date": "2026-09-08",
+      "expiryDate": "2026-09-15",
+      "priority": "Important",
+      "targetAudience": "all",
+      "createdBy": "Rajesh Sharma (Owner)"
+    },
+    {
+      "id": "NOT-02",
+      "title": "Free High-Speed Wi-Fi Upgrade Completed on Floor 2 & 3",
+      "message": "New dual-band Wi-Fi 6 access points have been installed. Use SSID \"GreenfieldGuest_HighSpeed_5G\" with password \"Greenfield#WiFi2026\" for speeds up to 300 Mbps.",
+      "date": "2026-09-05",
+      "priority": "Normal",
+      "targetAudience": "all",
+      "createdBy": "Rajesh Sharma (Owner)"
+    },
+    {
+      "id": "NOT-03",
+      "title": "Monthly Rent Reminder: Due Date 5th of Each Month",
+      "message": "Dear residents, kindly note that monthly rent is due on the 5th of every month. Payments can be submitted via UPI, NetBanking, or cash to the office desk to avoid late fees.",
+      "date": "2026-09-01",
+      "expiryDate": "2026-09-30",
+      "priority": "Urgent",
+      "targetAudience": "all",
+      "createdBy": "Rajesh Sharma (Owner)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "senderId": "usr-aarav",
+      "senderName": "Aarav Patel (Room 101)",
+      "senderRole": "resident",
+      "receiverId": "admin",
+      "message": "Hello Rajesh sir, I will be working late on Friday. Could you please keep my dinner plate in the warm pantry?",
+      "createdAt": "2026-09-08T18:30:00.000Z",
+      "read": true
+    },
+    {
+      "id": "msg-2",
+      "senderId": "usr-admin",
+      "senderName": "Rajesh Sharma (Owner)",
+      "senderRole": "admin",
+      "receiverId": "usr-aarav",
+      "message": "Sure Aarav, I informed the cook chef Ramu. Your dinner will be boxed in the microwave rack on floor 1 common lounge.",
+      "createdAt": "2026-09-08T18:45:00.000Z",
+      "read": true
+    },
+    {
+      "id": "msg-3",
+      "senderId": "usr-rohan",
+      "senderName": "Rohan Verma (Room 103)",
+      "senderRole": "resident",
+      "receiverId": "admin",
+      "message": "Sir, regarding the balance rent of ₹2,500, my scholarship stipend will credit on 14th September and I will clear it.",
+      "createdAt": "2026-09-09T09:10:00.000Z",
+      "read": true
+    },
+    {
+      "id": "msg-4",
+      "senderId": "usr-admin",
+      "senderName": "Rajesh Sharma (Owner)",
+      "senderRole": "admin",
+      "receiverId": "usr-rohan",
+      "message": "Noted Rohan. Thanks for informing in advance. Approved until 15th September without overdue charges.",
+      "createdAt": "2026-09-09T10:00:00.000Z",
+      "read": true
+    },
+    {
+      "id": "msg-1789036180826",
+      "senderId": "usr-admin",
+      "senderName": "Rajesh Sharma",
+      "senderRole": "admin",
+      "receiverId": "RES-101",
+      "message": "HELLO PLEASE PAY YOUR RENT ",
+      "createdAt": "2026-09-10T10:29:40.826Z",
+      "read": false
+    }
+  ],
+  "cleaning": [
+    {
+      "id": "CLN-101",
+      "floor": 1,
+      "roomNumber": "101",
+      "targetArea": "Attached Toilet & Bathroom",
+      "cleaningDate": "2026-09-06",
+      "nextScheduledDate": "2026-09-13",
+      "assignedStaff": "Ramesh (Housekeeping)",
+      "status": "Completed",
+      "notes": "Acid scrub, anti-bacterial fogging, mirror cleaned"
+    },
+    {
+      "id": "CLN-103",
+      "floor": 1,
+      "roomNumber": "103",
+      "targetArea": "Attached Toilet & Bathroom",
+      "cleaningDate": "2026-09-06",
+      "nextScheduledDate": "2026-09-13",
+      "assignedStaff": "Ramesh (Housekeeping)",
+      "status": "Completed",
+      "notes": "Indian toilet descaled and floor sanitized"
+    },
+    {
+      "id": "CLN-201",
+      "floor": 2,
+      "roomNumber": "201",
+      "targetArea": "Attached Toilet & Bathroom",
+      "cleaningDate": "2026-09-01",
+      "nextScheduledDate": "2026-09-08",
+      "assignedStaff": "Sunil (Housekeeping)",
+      "status": "Completed",
+      "notes": "Scheduled for immediate re-visit",
+      "completedDate": "2026-09-10"
+    },
+    {
+      "id": "CLN-FL1-LIVING",
+      "floor": 1,
+      "roomNumber": "Common Area",
+      "targetArea": "Common Living Area & Corridor",
+      "cleaningDate": "2026-09-09",
+      "nextScheduledDate": "2026-09-12",
+      "assignedStaff": "Ramesh (Housekeeping)",
+      "status": "Completed",
+      "notes": "Mop with disinfectant, sofas dusted"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "MNT-01",
+      "roomNumber": "103",
+      "floor": 1,
+      "problem": "Washbasin tap drip replacement",
+      "reportedBy": "Rohan Verma (Resident)",
+      "date": "2026-09-08",
+      "priority": "Medium",
+      "assignedPerson": "Suresh (Plumber)",
+      "estimatedCost": 250,
+      "actualCost": 0,
+      "status": "In Progress",
+      "notes": "Parts purchased, scheduled installation today",
+      "complaintId": "CMP-101"
+    },
+    {
+      "id": "MNT-02",
+      "roomNumber": "201",
+      "floor": 2,
+      "problem": "Fan speed regulator buzzing",
+      "reportedBy": "Neha Kulkarni",
+      "date": "2026-09-04",
+      "priority": "Low",
+      "assignedPerson": "Mahesh (Electrician)",
+      "estimatedCost": 200,
+      "actualCost": 180,
+      "status": "Completed",
+      "resolutionDate": "2026-09-05",
+      "notes": "Anchor modular regulator replaced successfully",
+      "complaintId": "CMP-102"
+    },
+    {
+      "id": "MNT-3136",
+      "roomNumber": "103",
+      "floor": 1,
+      "problem": "Bathroom washbasin tap leaking water",
+      "reportedBy": "Rohan Verma",
+      "date": "2026-09-10",
+      "priority": "Medium",
+      "assignedPerson": "Suresh (Hostel Plumber)",
+      "estimatedCost": 500,
+      "actualCost": 0,
+      "status": "In Progress",
+      "notes": "The washbasin tap in attached bathroom has a slow persistent drip causing water wastage.",
+      "complaintId": "CMP-101"
+    },
+    {
+      "id": "MNT-9339",
+      "roomNumber": "103",
+      "floor": 1,
+      "problem": "Bathroom washbasin tap leaking water",
+      "reportedBy": "Rohan Verma",
+      "date": "2026-09-10",
+      "priority": "Medium",
+      "assignedPerson": "Suresh (Hostel Plumber)",
+      "estimatedCost": 500,
+      "actualCost": 0,
+      "status": "In Progress",
+      "notes": "The washbasin tap in attached bathroom has a slow persistent drip causing water wastage.",
+      "complaintId": "CMP-101"
+    },
+    {
+      "id": "MNT-4380",
+      "roomNumber": "201",
+      "floor": 2,
+      "problem": "Ceiling fan regulator noisy at speed 2",
+      "reportedBy": "Neha Kulkarni",
+      "date": "2026-09-10",
+      "priority": "Low",
+      "assignedPerson": "Mahesh (Electrician)",
+      "estimatedCost": 500,
+      "actualCost": 0,
+      "status": "In Progress",
+      "notes": "The ceiling fan regulator gives buzzing sound when switched to speed 2.",
+      "complaintId": "CMP-102"
+    }
+  ],
+  "checkInOuts": [
+    {
+      "id": "CIO-101",
+      "residentId": "RES-101",
+      "residentName": "Aarav Patel",
+      "roomNumber": "101",
+      "bedNumber": "Bed 1",
+      "type": "check-in",
+      "date": "2026-02-01",
+      "securityDeposit": 4500,
+      "remarks": "Initial onboarding, room key handed over"
+    },
+    {
+      "id": "CIO-103A",
+      "residentId": "RES-103A",
+      "residentName": "Rohan Verma",
+      "roomNumber": "103",
+      "bedNumber": "Bed 1",
+      "type": "check-in",
+      "date": "2026-01-15",
+      "securityDeposit": 3500,
+      "remarks": "Initial onboarding, bed 1 allocated"
+    },
+    {
+      "id": "CIO-103B",
+      "residentId": "RES-103B",
+      "residentName": "Vikram Sen",
+      "roomNumber": "103",
+      "bedNumber": "Bed 2",
+      "type": "check-in",
+      "date": "2026-02-10",
+      "securityDeposit": 3500,
+      "remarks": "Onboarding completed with ID verified"
+    },
+    {
+      "id": "CIO-201",
+      "residentId": "RES-201",
+      "residentName": "Neha Kulkarni",
+      "roomNumber": "201",
+      "bedNumber": "Bed 1",
+      "type": "check-in",
+      "date": "2026-03-01",
+      "securityDeposit": 4500,
+      "remarks": "Full deposit paid, key provided"
+    }
+  ],
+  "qrSessions": [],
+  "checkInRecords": [],
+  "registrations": [],
+  "emailOTPs": [],
+  "termsAcceptances": [
+    {
+      "id": "TRM-1790872559721-998",
+      "userId": "usr-aarav",
+      "username": "aarav",
+      "residentId": "RES-101",
+      "userName": "Aarav Patel",
+      "userRole": "resident",
+      "version": "v2.0-2026",
+      "termsVersion": "v2.0-2026",
+      "acceptedAt": "2026-10-01T16:35:59.698Z",
+      "acceptedDate": "2026-10-01",
+      "acceptedTime": "4:35:59 pm",
+      "ipAddress": "127.0.0.1",
+      "deviceBrowser": "Chrome 122 on Windows"
+    }
+  ],
+  "termsConfig": {
+    "version": "v2.1-2026",
+    "title": "Official Hostel Terms & Conditions",
+    "rules": [
+      "Residents are responsible for the safety and security of their own belongings.",
+      "Residents must switch off the fan and lights and lock the room whenever they leave. A penalty of ₹50 for leaving the light on and ₹100 for leaving the fan running will be charged respectively.",
+      "Making excessive noise or fighting in the hostel is strictly prohibited.",
+      "Smoking and the consumption or possession of any kind of intoxicating or addictive substance are strictly prohibited in the hostel. Strict action will be taken if any such substance is found in a resident's possession.",
+      "Keeping any type of electrical appliance such as an iron, geyser, electric kettle, etc. in the hostel is strictly prohibited. If such items are found in a resident's possession, they may be confiscated.",
+      "Hostel fees must be paid between the 1st and 5th of every month. After the 5th, a late fee of ₹50 per day will be charged.",
+      "Entry of any outside person into the hostel, except registered hostel residents, is strictly prohibited.",
+      "No accommodation or food facilities will be provided for parents or relatives of residents.",
+      "Residents may give their belongings or money to another person at their own responsibility. The hostel management will not be responsible for any loss or damage.",
+      "Residents must inform the hostel management at least 15 days before leaving the hostel. Otherwise, the security deposit will not be refunded.",
+      "If a resident leaves the hostel at any time during the middle of a month, the monthly fee will not be refunded.",
+      "If a hostel bed remains reserved/booked for a resident, the full monthly fee must be paid under all circumstances.",
+      "Any damage caused to hostel property must be compensated by the resident responsible for the damage.",
+      "The hostel gate will remain open from 5:00 AM to 10:00 PM. The gate will not be opened after 10:00 PM.",
+      "Residents should take only as much food as they need and must not waste food. Taking food to the room is not permitted.",
+      "Residents must not engage in any activity inside the room that causes inconvenience or disturbance to their roommate, as both residents have to live together in the same room.",
+      "Suggestions and feedback are always welcome.",
+      "Residents must bring their own bucket, mug, cup, and spoon to the hostel.",
+      "The hostel management will not be responsible for any incident that occurs outside the hostel premises.",
+      "The hostel management will not be responsible for any self-inflicted physical harm arising from any form of mental stress or depression.",
+      "In case of any violation or irregularity of hostel rules, the resident may be expelled from the hostel.",
+      "In case of any absence from the hostel, the resident must submit a leave application or arrange communication with their parent/guardian.",
+      "During hostel holidays, the mess will remain closed. No food will be provided by the hostel during the holiday period."
+    ],
+    "holidays": [
+      "Raksha Bandhan",
+      "Durga Puja",
+      "Diwali",
+      "Holi"
+    ],
+    "holidayNotice": "During these holidays, the mess will remain closed and no food will be provided by the hostel.",
+    "updatedAt": "2026-10-01T16:36:38.420Z",
+    "updatedBy": "Rajesh Sharma (Owner)"
+  },
+  "visitors": [],
+  "presenceSessions": [],
+  "residentPresence": [],
+  "rentConfirmations": [],
+  "paymentCorrections": [],
+  "inventory": [],
+  "inventoryLogs": [],
+  "damageRecords": [],
+  "roomChanges": [],
+  "activityLogs": [
+    {
+      "id": "ACT-1790872598420-568",
+      "timestamp": "2026-10-01T16:36:38.420Z",
+      "performedBy": {
+        "id": "usr-admin",
+        "name": "Rajesh Sharma",
+        "role": "admin"
+      },
+      "action": "TERMS_PUBLISHED",
+      "module": "Terms & Conditions",
+      "affectedRecord": {
+        "type": "TermsConfig",
+        "id": "v2.1-2026",
+        "name": "Version v2.1-2026"
+      },
+      "details": "Owner Rajesh Sharma published Terms & Conditions version v2.1-2026"
+    },
+    {
+      "id": "ACT-1790872559721-889",
+      "timestamp": "2026-10-01T16:35:59.721Z",
+      "performedBy": {
+        "id": "usr-aarav",
+        "name": "Aarav Patel",
+        "role": "resident"
+      },
+      "action": "TERMS_ACCEPTED",
+      "module": "Terms & Conditions",
+      "affectedRecord": {
+        "type": "TermsAcceptance",
+        "id": "TRM-1790872559721-998",
+        "name": "Aarav Patel"
+      },
+      "details": "User Aarav Patel (resident) accepted Terms & Conditions version v2.0-2026"
+    }
+  ],
+  "checkoutSettlements": [],
+  "emergencyAlerts": []
+}

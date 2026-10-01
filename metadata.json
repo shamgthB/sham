@@ -1,0 +1,6 @@
+{
+  "name": "Hostel Management System",
+  "description": "Comprehensive, responsive Hostel Management Web Application for hostel owners and residents featuring room and bed allocation, flexible rent management, meal planning, complaint resolution, billing, and floor-wise tracking.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
